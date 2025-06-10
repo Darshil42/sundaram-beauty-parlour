@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f8f1e7;
+  color: #5a4e3c;
+}
+
+header {
+  background-color: #e0c9a6;
+  padding: 1rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #3f3222;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #5a4e3c;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  animation: fadeUp 0.8s ease-in;
+}
+
+h2 {
+  color: #3f3222;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery-container img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.qr {
+  width: 200px;
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea, button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #d4b48c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #b69673;
+  transform: scale(1.02);
+}
+
+footer {
+  background-color: #e0c9a6;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

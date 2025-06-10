@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUNDARAM BEAUTY PARLOUR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #fef6f0, #f8e8d4);
+      color: #5a4d44;
+    }
+
+    header {
+      background-color: #f4d7c3;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #8a4b3f;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #5a4d44;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff9f5;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #a65c48;
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+    }
+
+    form input,
+    form textarea {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      margin: 1rem 0;
+      border: 1px solid #dcbfa6;
+      border-radius: 8px;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    form button {
+      background-color: #e8b49a;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f4d7c3;
+      color: #5a4d44;
+      font-size: 0.9rem;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 2rem auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin: 0 10px;
+      border-radius: 8px;
+    }
+
+    .qr {
+      width: 200px;
+      display: block;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SUNDARAM BEAUTY PARLOUR</h1>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#deals">Deals</a>
+      <a href="#contact">Contact</a>
+      <a href="#booking">Book Appointment</a>
+      <a href="#query">Ask a Query</a>
+    </nav>
+  </header>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="slider">
+      <div class="slides" id="slider-track">
+        <img src="images/photo1.jpg" alt="Slide 1">
+        <img src="images/photo2.jpg" alt="Slide 2">
+        <img src="images/photo3.jpg" alt="Slide 3">
+        <img src="images/photo4.jpg" alt="Slide 4">
+        <img src="images/photo5.jpg" alt="Slide 5">
+        <img src="images/photo6.jpg" alt="Slide 6">
+        <img src="images/photo7.jpg" alt="Slide 7">
+        <img src="images/photo8.jpg" alt="Slide 8">
+        <img src="images/photo9.jpg" alt="Slide 9">
+        <img src="images/photo10.jpg" alt="Slide 10">
+        <img src="images/photo11.jpg" alt="Slide 11">
+        <img src="images/photo12.jpg" alt="Slide 12">
+        <img src="images/photo13.jpg" alt="Slide 13">
+        <img src="images/photo14.jpg" alt="Slide 14">
+        <img src="images/photo15.jpg" alt="Slide 15">
+        <img src="images/photo16.jpg" alt="Slide 16">
+        <img src="images/photo17.jpg" alt="Slide 17">
+        <img src="images/photo18.jpg" alt="Slide 18">
+        <img src="images/photo19.jpg" alt="Slide 19">
+        <img src="images/photo20.jpg" alt="Slide 20">
+      </div>
+    </div>
+  </section>
+
+  <section id="deals">
+    <h2>Today's Deals</h2>
+    <ul>
+      <li>Facial + Clean-up Combo: ₹999 only</li>
+      <li>Bridal Package at 20% OFF</li>
+      <li>Hair Spa + Haircut: ₹599</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Payment</h2>
+    <p>Phone: <a href="tel:+919726872476">+91 97268 72476</a></p>
+    <p>Address: 123, Main Road, Your City</p>
+    <h3>Google Pay QR</h3>
+    <img src="images/gpay-qr.jpg" alt="Google Pay QR Code" class="qr" />
+    <p>Google Pay Number: 7227995428</p>
+  </section>
+
+  <section id="booking">
+    <h2>Book an Appointment</h2>
+    <form id="booking-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="datetime-local" required />
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="query">
+    <h2>Ask a Query</h2>
+    <form id="query-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Query" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SUNDARAM BEAUTY PARLOUR. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const sliderTrack = document.getElementById('slider-track');
+    const slides = sliderTrack.children;
+    const totalSlides = slides.length;
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % totalSlides;
+      sliderTrack.style.transform = `translateX(-${index * (320)}px)`;
+    }, 2000);
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
